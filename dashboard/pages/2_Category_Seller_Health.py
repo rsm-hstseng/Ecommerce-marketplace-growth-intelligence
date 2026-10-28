@@ -269,9 +269,9 @@ contribution = filtered.dropna(subset=["gmv_change"]).sort_values(
     "gmv_change", ascending=False
 )
 
-positive = contribution.head(10)
+positive = contribution[contribution["gmv_change"] > 0].head(10)
 
-negative = contribution.sort_values("gmv_change").head(10)
+negative = contribution[contribution["gmv_change"] < 0].sort_values("gmv_change").head(10)
 
 left, right = st.columns(2)
 
@@ -298,7 +298,7 @@ with right:
     st.subheader("Largest GMV Decreases")
 
     fig_negative = px.bar(
-        negative.sort_values("gmv_change"),
+        negative.sort_values("gmv_change", ascending=False),
         x="gmv_change",
         y="category_name",
         orientation="h",

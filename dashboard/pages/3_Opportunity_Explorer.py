@@ -402,7 +402,7 @@ with right:
         use_container_width=True,
         column_config={
             "Normalized Score": st.column_config.NumberColumn(format="%.2f"),
-            "Weight": st.column_config.NumberColumn(format="%.0f%%"),
+            "Weight": st.column_config.NumberColumn(format="percent"),
             "Weighted Contribution": st.column_config.NumberColumn(format="%.2f"),
         },
     )

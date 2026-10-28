@@ -137,6 +137,20 @@ Category contributions, seller concentration, and category performance.
 **Page 3 — Opportunity Explorer**
 Strategy selection, ranked opportunities, score explanations, ranking stability, and CSV export.
 
+### Screenshots
+
+**Growth Overview**: monthly KPIs, insight and GMV trend
+![Growth Overview](docs/screenshots/01_growth_overview.png)
+
+**Opportunity Explorer**: strategy filters and ranked Category × Region opportunities
+![Opportunity ranking](docs/screenshots/02_opportunity_ranking.png)
+
+**Score explanation**: books_general_interest × SP gets almost all of its score from growth momentum
+![Score explanation](docs/screenshots/03_score_explanation.png)
+
+**Category & Seller Health**: largest month-over-month GMV increases and decreases
+![Category growth contribution](docs/screenshots/04_category_growth_contribution.png)
+
 ### Key Charts
 
 ![Monthly Item GMV and AOV](docs/images/monthly_gmv.png)
@@ -199,7 +213,7 @@ python -m pip install -r requirements.txt
 7. Start the Streamlit application:
 
 ```bash
-python -m streamlit run dashboard/app.py
+python -m streamlit run dashboard/Growth_Overview.py
 ```
 
 The application requires access to a locally configured PostgreSQL database populated with the analytical models.

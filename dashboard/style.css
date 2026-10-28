@@ -87,7 +87,6 @@ div[data-testid="stPlotlyChart"] {
     background-color: #FFFFFF;
     border: 1px solid #E5EAF0;
     border-radius: 16px;
-    padding: 12px;
     box-shadow: 0 4px 18px rgba(16, 42, 67, 0.03);
     overflow: hidden;
 }
