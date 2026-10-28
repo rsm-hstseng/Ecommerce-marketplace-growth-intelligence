@@ -1,0 +1,14 @@
+
+# Marketplace Growth Intelligence
+# Global Streamlit Theme
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"
+backgroundColor = "#F5F7FB"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#102A43"
+font = "sans serif"
+
+[client]
+showErrorDetails = "full"

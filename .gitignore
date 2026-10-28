@@ -1,0 +1,14 @@
+.venv/
+.streamlit/secrets.toml
+__pycache__/
+.env
+
+# raw data (download from Kaggle)
+data/
+*.zip
+
+# local scratch output
+.DS_Store
+*.session.sql
+Untitled.csv
+test.csv
